@@ -17,9 +17,11 @@ if (!isset($_SESSION['user_id'])) {
 <hr>
 
 <?php if ($_SESSION['role'] == 'pengajar'): ?>
-    <a href="input_nilai.php">Input Nilai</a>
+    <a href="input_nilai.php">Input Nilai</a><br>
+    <a href="raport.php">Lihat Raport Siswa</a>
 <?php endif; ?>
 
 <?php if ($_SESSION['role'] == 'murid'): ?>
-    <a href="lihat_nilai.php">Lihat Nilai Saya</a>
+    <a href="lihat_nilai.php">Lihat Nilai Saya</a><br>
+    <a href="raport.php">Lihat Raport Saya</a>
 <?php endif; ?>
